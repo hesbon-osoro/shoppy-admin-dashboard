@@ -2,5 +2,6 @@
   "editor.fontLigatures": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "editor.fontFamily": "'Fira Code','Droid Sans Mono', 'monospace', monospace"
+  "editor.fontFamily": "'Fira Code','Droid Sans Mono', 'monospace', monospace",
+  "prettier.singleAttributePerLine": true
 }
