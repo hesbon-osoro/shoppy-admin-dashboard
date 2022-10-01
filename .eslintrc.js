@@ -20,7 +20,13 @@ module.exports = {
     'react/state-in-constructor': 0,
     'import/prefer-default-export': 0,
     'max-len': [2, 550],
-    'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 1 }],
+    'no-multiple-empty-lines': [
+      'error',
+      {
+        max: 1,
+        maxEOF: 1,
+      },
+    ],
     'no-underscore-dangle': [
       'error',
       {
