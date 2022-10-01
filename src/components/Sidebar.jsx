@@ -5,11 +5,12 @@ import { MdOutlineCancel } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { links } from '../data/links';
-const {useStateContext} = from '../contexts/ContextProvider'
+import { useStateContext } from '../contexts/ContextProvider';
 
 const Sidebar = () => {
-  const { currentColor, activeMenu, setActiveMenu, screenSize } = useStateContext()
-  
+  const { currentColor, activeMenu, setActiveMenu, screenSize } =
+    useStateContext();
+
   const handleCloseSidebar = () => {
     if (activeMenu !== undefined && screenSize <= 900) {
       setActiveMenu(false);
