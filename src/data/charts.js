@@ -208,23 +208,6 @@ export const ColorMappingPrimaryYAxis = {
   title: 'Temperature',
 };
 
-export const FinancialPrimaryXAxis = {
-  valueType: 'DateTime',
-  minimum: new Date('2016, 12, 31'),
-  maximum: new Date('2017, 9, 30'),
-  crosshairTooltip: { enable: true },
-  majorGridLines: { width: 0 },
-};
-
-export const FinancialPrimaryYAxis = {
-  title: 'Price',
-  minimum: 100,
-  maximum: 180,
-  interval: 20,
-  lineStyle: { width: 0 },
-  majorTickLines: { width: 0 },
-};
-
 export const LinePrimaryXAxis = {
   valueType: 'DateTime',
   labelFormat: 'y',
