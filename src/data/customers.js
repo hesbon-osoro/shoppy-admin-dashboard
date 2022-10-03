@@ -5,7 +5,7 @@ import avatar2 from './images/avatar2.jpg';
 import avatar3 from './images/avatar3.png';
 import avatar4 from './images/avatar4.jpg';
 
-const customerGridImage = props => (
+const customerGridImage = (props) => (
   <div className="image flex gap-4">
     <img
       className="rounded-full w-10 h-10"
@@ -19,7 +19,7 @@ const customerGridImage = props => (
   </div>
 );
 
-const customerGridStatus = props => (
+const customerGridStatus = (props) => (
   <div className="flex gap-2 justify-center items-center text-gray-700 capitalize">
     <p
       style={{ background: props.StatusBg }}
