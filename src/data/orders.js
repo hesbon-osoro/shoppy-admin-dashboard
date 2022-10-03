@@ -8,7 +8,7 @@ import product6 from './images/product6.jpg';
 import product7 from './images/product7.jpg';
 
 // eslint-disable-next-line arrow-parens
-export const gridOrderImage = props => (
+export const gridOrderImage = (props) => (
   <div>
     <img
       className="rounded-xl h-20 md:ml-3"
@@ -19,7 +19,7 @@ export const gridOrderImage = props => (
 );
 
 // eslint-disable-next-line arrow-parens
-export const gridOrderStatus = props => (
+export const gridOrderStatus = (props) => (
   <button
     type="button"
     style={{ background: props.StatusBg }}
@@ -28,6 +28,25 @@ export const gridOrderStatus = props => (
     {props.Status}
   </button>
 );
+
+export const contextMenuItems = [
+  'AutoFit',
+  'AutoFitAll',
+  'SortAscending',
+  'SortDescending',
+  'Copy',
+  'Edit',
+  'Delete',
+  'Save',
+  'Cancel',
+  'PdfExport',
+  'ExcelExport',
+  'CsvExport',
+  'FirstPage',
+  'PrevPage',
+  'LastPage',
+  'NextPage',
+];
 
 export const ordersGrid = [
   {
