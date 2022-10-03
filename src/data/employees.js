@@ -1,12 +1,12 @@
 import React from 'react';
 import { GrLocation } from 'react-icons/gr';
-import avatar from './images/avatar.jpg';
+import avatar from './images/avatar.png';
 import avatar2 from './images/avatar2.jpg';
 import avatar3 from './images/avatar3.png';
 import avatar4 from './images/avatar4.jpg';
 
 // eslint-disable-next-line arrow-parens
-const gridEmployeeProfile = props => (
+const gridEmployeeProfile = (props) => (
   <div className="flex items-center gap-2">
     <img
       className="rounded-full w-10 h-10"
@@ -18,7 +18,7 @@ const gridEmployeeProfile = props => (
 );
 
 // eslint-disable-next-line arrow-parens
-const gridEmployeeCountry = props => (
+const gridEmployeeCountry = (props) => (
   <div className="flex items-center justify-center gap-2">
     <GrLocation />
     <span>{props.Country}</span>
