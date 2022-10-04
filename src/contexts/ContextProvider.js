@@ -1,6 +1,5 @@
-import React, { createContext, useContext, useState } from 'react';
-
-const StateContext = createContext();
+import React, { useState } from 'react';
+import { StateContext } from './StateContext';
 
 const initialState = {
   chat: false,
@@ -11,7 +10,7 @@ const initialState = {
 
 export const ContextProvider = ({ children }) => {
   const [screenSize, setScreenSize] = useState(undefined);
-  const { currentColor, setCurrentColor } = useState('#03C9D7');
+  const [currentColor, setCurrentColor] = useState('#03C9D7');
   const [currentMode, setCurrentMode] = useState('Light');
   const [themeSettings, setThemeSettings] = useState(false);
   const [activeMenu, setActiveMenu] = useState(true);
@@ -33,6 +32,7 @@ export const ContextProvider = ({ children }) => {
 
   return (
     <StateContext.Provider
+      // eslint-disable-next-line react/jsx-no-constructed-context-values
       value={{
         currentColor,
         currentMode,
@@ -45,6 +45,7 @@ export const ContextProvider = ({ children }) => {
         setIsClicked,
         setActiveMenu,
         setCurrentColor,
+        setCurrentMode,
         setMode,
         setColor,
         themeSettings,
@@ -55,5 +56,3 @@ export const ContextProvider = ({ children }) => {
     </StateContext.Provider>
   );
 };
-
-export const useStateContext = () => useContext(StateContext);
