@@ -15,7 +15,7 @@ import {
   LinePrimaryXAxis,
   LinePrimaryYAxis,
 } from '../../data/charts';
-import { useStateContext } from '../../contexts/ContextProvider';
+import { useStateContext } from '../../contexts/useStateContext';
 
 const LineChart = () => {
   const { currentMode } = useStateContext();
