@@ -2,7 +2,7 @@ import React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
 import { Button } from '.';
 import { chatData } from '../data/chat';
-import { useStateContext } from '../contexts/ContextProvider';
+import { useStateContext } from '../contexts/useStateContext';
 
 const Chat = () => {
   const { currentColor } = useStateContext();
