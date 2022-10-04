@@ -4,9 +4,10 @@ import { BsCheck } from 'react-icons/bs';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { themeColors } from '../data/theme';
-import { useStateContext } from '../contexts/ContextProvider';
+import { useStateContext } from '../contexts/useStateContext';
 
 const ThemeSettings = () => {
+  // eslint-disable-next-line operator-linebreak
   const { setColor, setMode, currentMode, currentColor, setThemeSettings } =
     useStateContext();
 
