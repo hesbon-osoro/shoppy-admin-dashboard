@@ -16,7 +16,7 @@ import {
   areaPrimaryXAxis,
   areaPrimaryYAxis,
 } from '../../data/charts';
-import { useStateContext } from '../../contexts/ContextProvider';
+import { useStateContext } from '../../contexts/useStateContext';
 
 const Area = () => {
   const { currentMode } = useStateContext();
