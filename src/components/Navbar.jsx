@@ -8,9 +8,9 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import avatar from '../data/images/avatar.png';
 import { Cart, Chat, Notification, UserProfile } from '.';
-import { useStateContext } from '../contexts/ContextProvider';
+import { useStateContext } from '../contexts/useStateContext';
 
-const NavButton = ({ title, customFunc, icon, color, dotColor }) => {
+const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
   <TooltipComponent content={title} position="BottomCenter">
     <button
       type="button"
@@ -24,8 +24,8 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => {
       />
       {icon}
     </button>
-  </TooltipComponent>;
-};
+  </TooltipComponent>
+);
 
 const Navbar = () => {
   const {
