@@ -3,6 +3,7 @@ import { ColorPickerComponent } from '@syncfusion/ej2-react-inputs';
 import { Header } from '../components';
 
 const change = (args) => {
+  // eslint-disable-next-line operator-linebreak
   document.getElementById('preview').style.backgroundColor =
     args.currentValue.hex;
 };
