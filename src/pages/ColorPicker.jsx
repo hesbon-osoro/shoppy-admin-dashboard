@@ -27,7 +27,7 @@ const ColorPicker = () => (
       <div className="flex justify-center items-center gap-20 flex-wrap">
         <div>
           <p className="text-2xl font-semibold mt-2 mb-4">Inline Palette</p>
-          <CustomColorPicker id="inline-palette" mode="palette" />
+          <CustomColorPicker id="inline-palette" mode="Palette" />
         </div>
         <div>
           <p className="text-2xl font-semibold mt-2 mb-4">Inline Picker</p>
